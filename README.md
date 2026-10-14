@@ -11,7 +11,6 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/meryem-belmouaddine-693b62252"><img src="https://img.shields.io/badge/LinkedIn-meryem--belmouaddine-7B5CE0?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="mailto:belmouaddine.ptech@gmail.com"><img src="https://img.shields.io/badge/E--mail-me%20contacter-B65FB0?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail" /></a>
   <img src="https://img.shields.io/badge/Stage-f%C3%A9vrier%202027%20%C2%B7%206%20mois-F3A9CF?style=for-the-badge&logoColor=white" alt="Stage février 2027" />
 </p>
 
