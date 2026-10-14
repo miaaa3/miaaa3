@@ -3,6 +3,7 @@
 </p>
 
 <p align="center">
+  <a href="https://miaaa3.github.io"><img src="https://img.shields.io/badge/Portfolio-miaaa3.github.io-E78EA6?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio" /></a>
   <a href="https://www.linkedin.com/in/meryem-belmouaddine"><img src="https://img.shields.io/badge/LinkedIn-on%20papote%20%3F-7B5CE0?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <img src="https://img.shields.io/badge/Stage-f%C3%A9vrier%202027%20%C2%B7%206%20mois-B65FB0?style=for-the-badge" alt="Stage février 2027, 6 mois" />
   <img src="https://img.shields.io/badge/Alsace-%F0%9F%A5%A8%20en%20priorit%C3%A9-F3A9CF?style=for-the-badge" alt="Alsace en priorité" />
