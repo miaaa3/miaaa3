@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320" role="img" aria-label="Meryem Belmouaddine — développeuse full-stack et mobile">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#160F20"/>
+      <stop offset=".55" stop-color="#26163A"/>
+      <stop offset="1" stop-color="#3A1C4C"/>
+    </linearGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F3A9CF"/>
+      <stop offset=".5" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#B9A3FF"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0;-1 0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0" spreadMethod="reflect">
+      <stop offset="0" stop-color="#F3A9CF"/>
+      <stop offset="1" stop-color="#B9A3FF"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="38"/></filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="card"><rect width="900" height="320" rx="28"/></clipPath>
+
+    <!-- Petite fleur réutilisable -->
+    <g id="flower">
+      <circle cx="0" cy="-7" r="6"/>
+      <circle cx="6.7" cy="-2.2" r="6"/>
+      <circle cx="4.1" cy="5.7" r="6"/>
+      <circle cx="-4.1" cy="5.7" r="6"/>
+      <circle cx="-6.7" cy="-2.2" r="6"/>
+      <circle cx="0" cy="0" r="3.6" fill="#FFE3F1"/>
+    </g>
+    <path id="spark" d="M0 -9 C1 -2 2 -1 9 0 C2 1 1 2 0 9 C-1 2 -2 1 -9 0 C-2 -1 -1 -2 0 -9Z"/>
+
+    <style>
+      .t { font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .serif { font-family: Georgia, 'Times New Roman', serif; font-style: italic; }
+      .petal { animation: fall linear infinite; }
+      @keyframes fall {
+        0% { transform: translate(0, -40px) rotate(0deg); opacity: 0; }
+        10% { opacity: .9; }
+        90% { opacity: .9; }
+        100% { transform: translate(-120px, 380px) rotate(540deg); opacity: 0; }
+      }
+      .tw { animation: twinkle 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      @keyframes twinkle { 0%, 100% { opacity: .15; transform: scale(.5); } 50% { opacity: 1; transform: scale(1.1); } }
+      .bloom { transform-box: fill-box; transform-origin: center; animation: bloom 1.6s cubic-bezier(.2, 1.4, .4, 1) both, spin 18s linear 1.6s infinite; }
+      @keyframes bloom { 0% { transform: scale(0) rotate(-90deg); } 100% { transform: scale(1) rotate(0deg); } }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      .rise { animation: rise .9s ease-out both; }
+      @keyframes rise { 0% { opacity: 0; transform: translateY(14px); } 100% { opacity: 1; transform: none; } }
+      .line { opacity: 0; animation: cycle 12s ease-in-out infinite; }
+      .l2 { animation-delay: 4s; } .l3 { animation-delay: 8s; }
+      @keyframes cycle { 0% { opacity: 0; transform: translateY(8px); } 4%, 29% { opacity: 1; transform: none; } 33%, 100% { opacity: 0; transform: translateY(-8px); } }
+      .blob1 { animation: drift 14s ease-in-out infinite alternate; }
+      .blob2 { animation: drift 18s ease-in-out infinite alternate-reverse; }
+      @keyframes drift { from { transform: translate(0, 0); } to { transform: translate(60px, 30px); } }
+      .wave { animation: wave 1.6s ease-in-out 1.2s 3; transform-box: fill-box; transform-origin: 70% 80%; }
+      @keyframes wave { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(18deg); } 75% { transform: rotate(-10deg); } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="900" height="320" fill="url(#bg)"/>
+    <circle class="blob1" cx="720" cy="40" r="150" fill="#7B5CE0" opacity=".45" filter="url(#blur)"/>
+    <circle class="blob2" cx="160" cy="300" r="140" fill="#B65FB0" opacity=".35" filter="url(#blur)"/>
+
+    <!-- Pétales qui tombent -->
+    <g fill="#F3A9CF" opacity=".85">
+      <use href="#flower" class="petal" x="120" y="0" style="animation-duration:9s;animation-delay:0s" transform="scale(.7)"/>
+      <use href="#flower" class="petal" x="330" y="0" style="animation-duration:12s;animation-delay:2s"/>
+      <use href="#flower" class="petal" x="560" y="0" style="animation-duration:10s;animation-delay:4s"/>
+      <use href="#flower" class="petal" x="760" y="0" style="animation-duration:13s;animation-delay:1s"/>
+      <use href="#flower" class="petal" x="880" y="0" style="animation-duration:11s;animation-delay:6s"/>
+    </g>
+    <g fill="#C9B8F0" opacity=".7">
+      <use href="#flower" class="petal" x="460" y="0" style="animation-duration:14s;animation-delay:3s"/>
+      <use href="#flower" class="petal" x="680" y="0" style="animation-duration:9.5s;animation-delay:7s"/>
+      <use href="#flower" class="petal" x="240" y="0" style="animation-duration:15s;animation-delay:5s"/>
+    </g>
+
+    <!-- Étoiles qui scintillent -->
+    <g fill="#FFFFFF">
+      <use href="#spark" class="tw" x="300" y="56"/>
+      <use href="#spark" class="tw" x="840" y="250" style="animation-delay:.8s"/>
+      <use href="#spark" class="tw" x="610" y="70" style="animation-delay:1.6s" transform="scale(.7)"/>
+      <use href="#spark" class="tw" x="70" y="60" style="animation-delay:1.1s" transform="scale(.6)"/>
+      <use href="#spark" class="tw" x="790" y="120" style="animation-delay:.4s" transform="scale(.5)"/>
+    </g>
+
+    <!-- Grande fleur qui éclot -->
+    <g transform="translate(150 165)">
+      <g class="bloom" filter="url(#glow)">
+        <g fill="#F3A9CF">
+          <ellipse cx="0" cy="-42" rx="26" ry="40"/>
+          <ellipse cx="0" cy="-42" rx="26" ry="40" transform="rotate(72)"/>
+          <ellipse cx="0" cy="-42" rx="26" ry="40" transform="rotate(144)"/>
+          <ellipse cx="0" cy="-42" rx="26" ry="40" transform="rotate(216)"/>
+          <ellipse cx="0" cy="-42" rx="26" ry="40" transform="rotate(288)"/>
+        </g>
+        <g fill="#B65FB0" opacity=".55">
+          <ellipse cx="0" cy="-30" rx="14" ry="26" transform="rotate(36)"/>
+          <ellipse cx="0" cy="-30" rx="14" ry="26" transform="rotate(108)"/>
+          <ellipse cx="0" cy="-30" rx="14" ry="26" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-30" rx="14" ry="26" transform="rotate(252)"/>
+          <ellipse cx="0" cy="-30" rx="14" ry="26" transform="rotate(324)"/>
+        </g>
+        <circle r="22" fill="#FFE3F1"/>
+      </g>
+      <!-- Petit visage kawaii au centre (ne tourne pas) -->
+      <g class="rise" style="animation-delay:1.2s">
+        <circle cx="-7" cy="-3" r="2.6" fill="#3A1C4C"/>
+        <circle cx="7" cy="-3" r="2.6" fill="#3A1C4C"/>
+        <path d="M-5 5 Q0 10 5 5" stroke="#3A1C4C" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <circle cx="-13" cy="4" r="3" fill="#F38BB8" opacity=".7"/>
+        <circle cx="13" cy="4" r="3" fill="#F38BB8" opacity=".7"/>
+      </g>
+    </g>
+
+    <!-- Texte -->
+    <g class="t">
+      <text class="rise" x="290" y="98" font-size="20" fill="#DCD0F2" style="animation-delay:.3s">Coucou, moi c'est <tspan class="wave" font-size="22">👋</tspan></text>
+      <text class="rise" x="288" y="160" font-size="54" font-weight="800" fill="url(#name)" style="animation-delay:.5s" letter-spacing="-1">Meryem Belmouaddine</text>
+      <text class="rise serif" x="292" y="198" font-size="21" fill="#F3A9CF" style="animation-delay:.8s">développeuse full-stack &amp; mobile · M2 @ UHA Mulhouse</text>
+
+      <g transform="translate(292 250)">
+        <rect x="-4" y="-24" width="520" height="38" rx="19" fill="#FFFFFF" fill-opacity=".07" stroke="url(#shine)" stroke-opacity=".5"/>
+        <text class="line" x="16" y="1" font-size="17" fill="#FFFFFF">☕  je transforme le café en code (taux de conversion : élevé)</text>
+        <text class="line l2" x="16" y="1" font-size="17" fill="#FFFFFF">🚗  je fais rouler 15 000 voitures dans un navigateur</text>
+        <text class="line l3" x="16" y="1" font-size="17" fill="#FFFFFF">🌸  je cherche un stage de 6 mois dès février 2027</text>
+      </g>
+    </g>
+  </g>
+</svg>

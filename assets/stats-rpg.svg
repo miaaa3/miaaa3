@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-label="Fiche personnage : niveau M2, statistiques et quête principale du stage">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1A1225"/>
+      <stop offset="1" stop-color="#2A173B"/>
+    </linearGradient>
+    <linearGradient id="fill" x1="0" x2="1">
+      <stop offset="0" stop-color="#F3A9CF"/>
+      <stop offset="1" stop-color="#7B5CE0"/>
+    </linearGradient>
+    <linearGradient id="low" x1="0" x2="1">
+      <stop offset="0" stop-color="#FF8FA3"/>
+      <stop offset="1" stop-color="#F6C177"/>
+    </linearGradient>
+    <style>
+      .t { font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .px { font-family: 'SF Mono', Menlo, Consolas, monospace; }
+      .lbl { font-size: 15px; fill: #DCD0F2; }
+      .val { font-size: 14px; fill: #FFFFFF; font-weight: 700; }
+      .hint { font-size: 12px; fill: #A398B5; font-style: italic; }
+      .bob { animation: bob 2.6s ease-in-out infinite; }
+      @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+      .pulse { animation: pulse 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      @keyframes pulse { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
+      .blink { animation: blinkEye 4s steps(1) infinite; }
+      @keyframes blinkEye { 0%, 92% { opacity: 1; } 94% { opacity: 0; } 96%, 100% { opacity: 1; } }
+    </style>
+  </defs>
+
+  <rect width="900" height="300" rx="24" fill="url(#bg)"/>
+  <rect x="1" y="1" width="898" height="298" rx="23" fill="none" stroke="#3A3049" stroke-width="2"/>
+
+  <!-- Avatar pixel-kawaii -->
+  <g transform="translate(40 52)"><g class="bob">
+    <rect width="150" height="150" rx="26" fill="#2B2438"/>
+    <!-- cheveux -->
+    <path d="M30 70 Q30 30 75 28 Q120 30 120 70 L120 120 L106 120 L106 70 Q75 54 44 70 L44 120 L30 120Z" fill="#2A1B12"/>
+    <!-- visage -->
+    <ellipse cx="75" cy="78" rx="31" ry="33" fill="#F4C9A8"/>
+    <!-- frange -->
+    <path d="M44 66 Q60 44 75 52 Q90 44 106 66 Q90 58 75 62 Q60 58 44 66Z" fill="#2A1B12"/>
+    <!-- lunettes -->
+    <g fill="none" stroke="#1A1225" stroke-width="3">
+      <circle cx="62" cy="80" r="10"/>
+      <circle cx="88" cy="80" r="10"/>
+      <path d="M72 80 L78 80"/>
+    </g>
+    <g class="blink" fill="#1A1225">
+      <circle cx="62" cy="81" r="3"/>
+      <circle cx="88" cy="81" r="3"/>
+    </g>
+    <circle cx="54" cy="94" r="4" fill="#F38BB8" opacity=".6"/>
+    <circle cx="96" cy="94" r="4" fill="#F38BB8" opacity=".6"/>
+    <path d="M68 98 Q75 104 82 98" stroke="#7A3A3A" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <!-- haut -->
+    <path d="M38 150 Q40 116 75 114 Q110 116 112 150Z" fill="#7B5CE0"/>
+    <!-- fleur dans les cheveux -->
+    <g transform="translate(110 46)"><g fill="#F3A9CF" class="pulse">
+      <circle cy="-6" r="5"/><circle cx="5.7" cy="-1.9" r="5"/><circle cx="3.5" cy="4.9" r="5"/><circle cx="-3.5" cy="4.9" r="5"/><circle cx="-5.7" cy="-1.9" r="5"/>
+      <circle r="3" fill="#FFE3F1"/>
+    </g></g>
+  </g></g>
+  <g class="t">
+    <text x="115" y="232" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">Meryem</text>
+    <text x="115" y="252" text-anchor="middle" font-size="12" fill="#F3A9CF">classe : Dev full-stack</text>
+    <rect x="62" y="262" width="106" height="22" rx="11" fill="#7B5CE0"/>
+    <text x="115" y="278" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF" class="px">NIV. M2 ✦</text>
+  </g>
+
+  <!-- Statistiques -->
+  <g class="t" transform="translate(240 40)">
+    <text x="0" y="0" font-size="13" fill="#A398B5" letter-spacing="2">STATISTIQUES</text>
+
+    <g transform="translate(0 30)">
+      <text class="lbl" y="0">💻 Code</text>
+      <rect x="200" y="-12" width="290" height="14" rx="7" fill="#2B2438"/>
+      <rect x="200" y="-12" width="0" height="14" rx="7" fill="url(#fill)"><animate attributeName="width" to="267" dur="1.2s" begin=".2s" fill="freeze"/></rect>
+      <text class="val" x="502" y="0">92</text>
+    </g>
+    <g transform="translate(0 62)">
+      <text class="lbl" y="0">☕ Café</text>
+      <rect x="200" y="-12" width="290" height="14" rx="7" fill="#2B2438"/>
+      <rect x="200" y="-12" width="0" height="14" rx="7" fill="url(#fill)"><animate attributeName="width" to="290" dur="1.2s" begin=".4s" fill="freeze"/></rect>
+      <text class="val" x="502" y="0">MAX</text>
+    </g>
+    <g transform="translate(0 94)">
+      <text class="lbl" y="0">🎨 Créativité</text>
+      <rect x="200" y="-12" width="290" height="14" rx="7" fill="#2B2438"/>
+      <rect x="200" y="-12" width="0" height="14" rx="7" fill="url(#fill)"><animate attributeName="width" to="275" dur="1.2s" begin=".6s" fill="freeze"/></rect>
+      <text class="val" x="502" y="0">95</text>
+    </g>
+    <g transform="translate(0 126)">
+      <text class="lbl" y="0">🐛 Patience avec les bugs</text>
+      <rect x="200" y="-12" width="290" height="14" rx="7" fill="#2B2438"/>
+      <rect x="200" y="-12" width="0" height="14" rx="7" fill="url(#fill)"><animate attributeName="width" values="0;250;180" keyTimes="0;.6;1" dur="2s" begin=".8s" fill="freeze"/></rect>
+      <text class="val" x="502" y="0">62</text>
+    </g>
+    <g transform="translate(0 158)">
+      <text class="lbl" y="0">😴 Sommeil</text>
+      <rect x="200" y="-12" width="290" height="14" rx="7" fill="#2B2438"/>
+      <rect x="200" y="-12" width="0" height="14" rx="7" fill="url(#low)"><animate attributeName="width" to="58" dur="1.2s" begin="1s" fill="freeze"/></rect>
+      <text class="val" x="502" y="0">20</text>
+      <text class="hint" x="540" y="0">(période d'examens)</text>
+    </g>
+  </g>
+
+  <!-- Quête -->
+  <g class="t" transform="translate(240 228)">
+    <rect width="620" height="50" rx="16" fill="#FFFFFF" fill-opacity=".05" stroke="#F3A9CF" stroke-opacity=".45" stroke-dasharray="6 6">
+      <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="20" y="21" font-size="12" fill="#F3A9CF" letter-spacing="2" font-weight="700">⚔ QUÊTE PRINCIPALE</text>
+    <text x="20" y="40" font-size="15" fill="#FFFFFF">Trouver un stage de 6 mois · février 2027 · récompense : +1 dev motivée</text>
+    <circle class="pulse" cx="596" cy="25" r="7" fill="#8FE3C8"/>
+  </g>
+</svg>
