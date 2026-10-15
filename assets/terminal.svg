@@ -1,66 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="396" viewBox="0 0 900 396" role="img" aria-label="Terminal : whoami, ma stack, ma recherche de stage et un café">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="452" viewBox="0 0 900 452" role="img" aria-label="Mia OS terminal: whoami, git status, internship and sudo make coffee">
   <defs>
-    <linearGradient id="bar" x1="0" x2="1">
-      <stop offset="0" stop-color="#F3A9CF"/>
-      <stop offset="1" stop-color="#7B5CE0"/>
-    </linearGradient>
     <style>
-      .m { font-family: 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; font-size: 14.5px; }
-      .p { fill: #F3A9CF; } .h { fill: #B9A3FF; } .w { fill: #F4EEFB; } .d { fill: #A398B5; } .g { fill: #8FE3C8; } .y { fill: #F6C177; }
+      .m { font-family: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; font-size: 14.5px; }
+      .p { fill: #8FE3C8; } .w { fill: #F4EEFB; } .d { fill: #B9AECB; } .y { fill: #F6C177; } .r { fill: #F3A9CF; }
       .cur { animation: blink 1s steps(1) infinite; }
       @keyframes blink { 50% { opacity: 0; } }
     </style>
-    <!-- Une zone de révélation par commande tapée -->
-    <clipPath id="c1"><rect x="150" y="70" height="26" width="0"><animate attributeName="width" from="0" to="80" begin="0.4s" dur="0.6s" fill="freeze"/></rect></clipPath>
-    <clipPath id="c2"><rect x="150" y="134" height="26" width="0"><animate attributeName="width" from="0" to="140" begin="2.0s" dur="0.8s" fill="freeze"/></rect></clipPath>
-    <clipPath id="c3"><rect x="150" y="198" height="26" width="0"><animate attributeName="width" from="0" to="640" begin="3.6s" dur="1.8s" fill="freeze"/></rect></clipPath>
-    <clipPath id="c4"><rect x="150" y="294" height="26" width="0"><animate attributeName="width" from="0" to="200" begin="8.6s" dur="0.8s" fill="freeze"/></rect></clipPath>
+    <!-- one reveal zone per typed command -->
+    <clipPath id="c1"><rect x="176" y="68" height="24" width="0"><animate attributeName="width" from="0" to="70" begin="0.4s" dur="0.5s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c2"><rect x="176" y="164" height="24" width="0"><animate attributeName="width" from="0" to="100" begin="2.1s" dur="0.6s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c3"><rect x="176" y="260" height="24" width="0"><animate attributeName="width" from="0" to="100" begin="4.0s" dur="0.6s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c4"><rect x="176" y="332" height="24" width="0"><animate attributeName="width" from="0" to="160" begin="5.8s" dur="0.9s" fill="freeze"/></rect></clipPath>
   </defs>
 
-  <rect width="900" height="396" rx="18" fill="#141019"/>
-  <rect x=".5" y=".5" width="899" height="395" rx="18" fill="none" stroke="#3A3049"/>
-  <rect width="900" height="42" rx="18" fill="#1F1829"/>
-  <rect y="24" width="900" height="18" fill="#1F1829"/>
-  <circle cx="26" cy="21" r="6.5" fill="#FF6B8B"/>
-  <circle cx="48" cy="21" r="6.5" fill="#F6C177"/>
-  <circle cx="70" cy="21" r="6.5" fill="#8FE3C8"/>
-  <text x="450" y="26" text-anchor="middle" class="m d" font-size="13">meryem@uha — zsh — 🌸</text>
+  <!-- window -->
+  <rect width="900" height="452" rx="16" fill="#0E0B12"/>
+  <rect x=".5" y=".5" width="899" height="451" rx="16" fill="none" stroke="#3A3049"/>
+  <path d="M16 0h868a16 16 0 0 1 16 16v24H0V16A16 16 0 0 1 16 0z" fill="#2B2438"/>
+  <circle cx="24" cy="20" r="6" fill="#FF8FA3"/>
+  <circle cx="44" cy="20" r="6" fill="#F6C177"/>
+  <circle cx="64" cy="20" r="6" fill="#8FE3C8"/>
+  <text x="88" y="25" class="m d" font-size="13">mia@mulhouse: ~/portfolio</text>
+  <text x="876" y="25" text-anchor="end" class="m d" font-size="13">✿ Mia OS</text>
 
   <g class="m">
     <!-- 1. whoami -->
-    <text x="28" y="88"><tspan class="p">meryem@uha</tspan><tspan class="h">:~</tspan><tspan class="w">$</tspan></text>
-    <text x="150" y="88" class="w" clip-path="url(#c1)">whoami</text>
-    <text x="28" y="116" class="w" opacity="0">→ Meryem, développeuse full-stack &amp; mobile, fan de projets qui bougent 🌸<set attributeName="opacity" to="1" begin="1.2s" fill="freeze"/></text>
-
-    <!-- 2. stack -->
-    <text x="28" y="152" opacity="0"><tspan class="p">meryem@uha</tspan><tspan class="h">:~</tspan><tspan class="w">$</tspan><set attributeName="opacity" to="1" begin="1.7s" fill="freeze"/></text>
-    <text x="150" y="152" class="w" clip-path="url(#c2)">cat stack.txt</text>
-    <text x="28" y="180" class="y" opacity="0">Angular · Spring Boot · TypeScript · Swift · WebGL · C++/OpenGL · Docker<set attributeName="opacity" to="1" begin="3.0s" fill="freeze"/></text>
-
-    <!-- 3. recherche de stage -->
-    <text x="28" y="216" opacity="0"><tspan class="p">meryem@uha</tspan><tspan class="h">:~</tspan><tspan class="w">$</tspan><set attributeName="opacity" to="1" begin="3.3s" fill="freeze"/></text>
-    <text x="150" y="216" class="w" clip-path="url(#c3)">./trouver-un-stage --duree=6mois --debut=fevrier-2027 --region=alsace</text>
-    <g opacity="0">
-      <set attributeName="opacity" to="1" begin="5.6s" fill="freeze"/>
-      <text x="28" y="244" class="d">recherche en cours</text>
-      <rect x="200" y="232" width="300" height="14" rx="7" fill="#2B2438"/>
-      <rect x="200" y="232" width="0" height="14" rx="7" fill="url(#bar)">
-        <animate attributeName="width" values="0;120;150;216;216" keyTimes="0;.35;.5;.8;1" begin="5.6s" dur="2.4s" fill="freeze"/>
-      </rect>
-      <text x="514" y="244" class="w">72 %</text>
+    <text x="28" y="84"><tspan class="p">mia@mulhouse ~ $</tspan></text>
+    <text x="176" y="84" class="w" clip-path="url(#c1)">whoami</text>
+    <g opacity="0"><set attributeName="opacity" to="1" begin="1.1s" fill="freeze"/>
+      <text x="28" y="112" class="d">mia (meryem belmouaddine). full-stack &amp; mobile developer.</text>
+      <text x="28" y="136" class="d">born in casablanca, compiling in mulhouse.</text>
     </g>
-    <text x="28" y="272" class="g" opacity="0">→ indice : la bonne candidate est peut-être en train de lire ceci 👀<set attributeName="opacity" to="1" begin="8.0s" fill="freeze"/></text>
 
-    <!-- 4. café -->
-    <text x="28" y="312" opacity="0"><tspan class="p">meryem@uha</tspan><tspan class="h">:~</tspan><tspan class="w">$</tspan><set attributeName="opacity" to="1" begin="8.3s" fill="freeze"/></text>
-    <text x="150" y="312" class="w" clip-path="url(#c4)">sudo make coffee</text>
-    <text x="28" y="340" class="w" opacity="0">☕ café prêt · productivité +300 % · bugs : -12 (ou +12, on verra)<set attributeName="opacity" to="1" begin="9.8s" fill="freeze"/></text>
+    <!-- 2. git status -->
+    <text x="28" y="180" opacity="0"><tspan class="p">mia@mulhouse ~ $</tspan><set attributeName="opacity" to="1" begin="1.8s" fill="freeze"/></text>
+    <text x="176" y="180" class="w" clip-path="url(#c2)">git status</text>
+    <g opacity="0"><set attributeName="opacity" to="1" begin="3.0s" fill="freeze"/>
+      <text x="28" y="208" class="d">On branch main. Ahead of 'origin/expectations' by 8 projects.</text>
+      <text x="28" y="232" class="d">modified:   <tspan class="y">career (internship, feb 2027)</tspan></text>
+    </g>
 
-    <!-- curseur -->
-    <g opacity="0">
-      <set attributeName="opacity" to="1" begin="10.4s" fill="freeze"/>
-      <text x="28" y="364" class="m"><tspan class="p">meryem@uha</tspan><tspan class="h">:~</tspan><tspan class="w">$</tspan></text>
-      <rect class="cur" x="152" y="351" width="9" height="17" fill="#F3A9CF"/>
+    <!-- 3. internship -->
+    <text x="28" y="276" opacity="0"><tspan class="p">mia@mulhouse ~ $</tspan><set attributeName="opacity" to="1" begin="3.7s" fill="freeze"/></text>
+    <text x="176" y="276" class="w" clip-path="url(#c3)">internship</text>
+    <text x="28" y="304" class="y" opacity="0">6 months · from feb 2027 · on site · alsace first, anywhere in france works<set attributeName="opacity" to="1" begin="4.9s" fill="freeze"/></text>
+
+    <!-- 4. coffee -->
+    <text x="28" y="348" opacity="0"><tspan class="p">mia@mulhouse ~ $</tspan><set attributeName="opacity" to="1" begin="5.5s" fill="freeze"/></text>
+    <text x="176" y="348" class="w" clip-path="url(#c4)">sudo make coffee</text>
+    <text x="28" y="376" class="r" opacity="0">mia is not in the sudoers file. This incident will be reported to her mum.<set attributeName="opacity" to="1" begin="7.1s" fill="freeze"/></text>
+
+    <!-- cursor -->
+    <g opacity="0"><set attributeName="opacity" to="1" begin="7.7s" fill="freeze"/>
+      <text x="28" y="420"><tspan class="p">mia@mulhouse ~ $</tspan></text>
+      <rect class="cur" x="178" y="407" width="9" height="17" fill="#F3A9CF"/>
     </g>
   </g>
 </svg>

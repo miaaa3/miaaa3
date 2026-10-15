@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- Renders the images of the GitHub profile with the portfolio's own stylesheet.
+     Serve /Users/miaa/PROJECTS and run: node tools/render.mjs -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&family=Outfit:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/07-Portfolio/miaaa3.github.io/css/style.css">
+<style>
+  html, body { background: transparent; padding: 0; overflow: visible; }
+  body { width: 1240px; }
+  .shot-box { padding: 20px; width: fit-content; }
+
+  /* hero: the site's first screen at a fixed size */
+  #hero { width: 1200px; background: var(--bg); border-radius: 22px; overflow: hidden; border: 1px solid var(--line); }
+  #hero .menubar { position: static; }
+  #hero .hero { min-height: 0; padding: 40px 44px 52px; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: 36px; }
+  #hero .hero h1 { font-size: 4.3rem; }
+  #hero .desktop { height: 470px; }
+  #hero .win-main img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; }
+
+  /* buttons */
+  .btns { display: flex; gap: 14px; padding: 6px; }
+  .btns .btn { font-size: 17px; padding: 14px 24px; }
+  .btn-rose { background: var(--rose); color: var(--ink); }
+
+  /* project cards */
+  .pcard { width: 560px; background: var(--panel); border: 1px solid var(--line); border-radius: 22px; padding: 16px 16px 20px; color: var(--text); }
+  .pcard .win { box-shadow: none; }
+  .pcard .shot img { aspect-ratio: 16 / 9; max-height: none; }
+  .pcard .body { padding: 18px 6px 0; }
+  .pcard .label { font-size: 13px; }
+  .pcard h3 { font-family: var(--display); font-weight: 800; font-size: 34px; line-height: 1.05; letter-spacing: -.02em; margin-bottom: 4px; }
+  .pcard .role { margin-bottom: 10px; }
+  .pcard .desc { font-family: var(--display); font-weight: 600; font-size: 24px; line-height: 1.25; color: var(--text); margin-bottom: 18px; height: 60px; }
+  .pcard .desc em { color: var(--accent); }
+  .pcard .figs { flex-wrap: nowrap; }
+  .pcard .fig:nth-child(n+3) { display: none; }
+  #card-lbp .shot img { object-position: 0 40%; }
+  .pcard .figs { margin-bottom: 16px; }
+  .pcard .go { display: inline-flex; font-weight: 600; font-size: 15px; padding: 9px 18px; border-radius: 999px; background: var(--accent); color: var(--ink); }
+  .pcard .private { padding: 9px 0 9px 12px; }
+
+  /* experience */
+  #exp { width: 980px; background: var(--bg); border: 1px solid var(--line); border-radius: 22px; padding: 40px 44px 28px; }
+  #exp h2 { font-family: var(--display); font-weight: 800; font-size: 3rem; line-height: 1; letter-spacing: -.03em; margin-bottom: 16px; }
+  #exp .tldr { margin-bottom: 26px; }
+  #exp .commit::before { animation: none; }
+
+  /* status bar footer */
+  #status { width: 1200px; position: static; border-radius: 12px; height: 38px; font-size: 13.5px; padding: 0 16px; }
+</style>
+</head>
+<body>
+
+<div class="shot-box"><div id="hero">
+  <header class="menubar">
+    <span class="brand"><span class="brand-mark">✿</span> Mia OS</span>
+    <nav class="topnav"><a>Projects</a><a>Experience</a><a>About</a><a>Contact</a></nav>
+    <div class="menubar-right"><span class="pill pill-term"><span>&gt;_</span><span>terminal</span></span><span class="pill">FR</span><span class="pill pill-rose">cv.pdf ↓</span></div>
+  </header>
+  <section class="hero">
+    <div class="hero-text">
+      <p class="whoami"><span class="prompt">~ $</span> whoami <span class="out">Meryem Belmouaddine, aka Mia</span></p>
+      <h1>I build apps.<br>Occasionally, <em>whole cities.</em></h1>
+      <p class="lead">Full-stack &amp; mobile developer from Casablanca, finishing a Master's in Mulhouse. I like software that has to survive real users, real data and real deadlines.</p>
+      <p class="status-chip"><span class="dot"></span><span>Looking for a 6-month internship · from February 2027</span></p>
+      <ul class="facts"><li><b>8</b> projects, 7 open source</li><li><b>4</b> internships, 2 at IBM</li><li><b>3</b> languages: AR, FR, EN</li></ul>
+    </div>
+    <div class="desktop">
+      <article class="win win-main" style="--x:6%;--y:2%">
+        <div class="win-bar"><span class="lights"><i></i><i></i><i></i></span><span class="win-title">nexusnexus.app</span><span class="win-meta">● live</span></div>
+        <div class="win-body"><img src="/07-Portfolio/miaaa3.github.io/assets/projects/nexus/cover.jpg" alt=""><span class="win-caption"><b>NexusNexus</b> <span>15,000+ cars on La Rochelle's real streets · 60 FPS</span></span></div>
+      </article>
+      <aside class="note" style="--x:66%;--y:58%">
+        <p class="note-title">todo.txt</p>
+        <ul><li class="done">ship NexusNexus</li><li class="done">19,000 cars in C++</li><li>find a team, Feb 2027</li><li>stop adding easter eggs</li></ul>
+      </aside>
+      <span class="sticker s-casa" style="--x:80%;--y:-5%;--r:-10deg">made in<br>casa ✦</span>
+    </div>
+  </section>
+</div></div>
+
+<div class="shot-box"><div class="btns" id="btns">
+  <span class="btn btn-violet" id="b-portfolio">Open my portfolio →</span>
+  <span class="btn btn-rose" id="b-cv">cv.pdf ↓</span>
+  <span class="btn btn-ghost" id="b-linkedin">LinkedIn ↗</span>
+</div></div>
+
+<div id="cards"></div>
+
+<div class="shot-box"><section id="exp">
+  <p class="path">~/experience.log</p>
+  <h2>git log <em>--my-life</em></h2>
+  <div id="logSlot"></div>
+</section></div>
+
+<div class="shot-box"><footer class="statusbar" id="status">
+  <span>⎇ main</span><span>✓ 0 bugs (that I know of)</span><span>☕ press ` on the portfolio for the terminal</span>
+  <span class="sb-right"><span>Ln 1, Col 1</span><span>UTF-8</span><span>☕ 100%</span></span>
+</footer></div>
+
+<script src="/07-Portfolio/miaaa3.github.io/js/projects.js"></script>
+<script src="/07-Portfolio/miaaa3.github.io/js/cases.js"></script>
+<script>
+  const ROOT = '/07-Portfolio/miaaa3.github.io/';
+  const en = v => (v && typeof v === 'object' && !Array.isArray(v)) ? v.en : v;
+  const strip = h => String(h).replace(/<[^>]+>/g, '');
+  document.getElementById('cards').innerHTML = PROJECTS.map((p, i) => `
+    <div class="shot-box"><article class="pcard" id="card-${p.id}" style="--accent:var(--${p.accent})">
+      <div class="win">
+        <div class="win-bar"><span class="lights"><i></i><i></i><i></i></span><span class="win-title">${p.file}</span><span class="win-meta">${String(i + 1).padStart(2, '0')} / ${String(PROJECTS.length).padStart(2, '0')}</span></div>
+        <span class="shot"><img src="${ROOT}${p.cover}" alt=""></span>
+      </div>
+      <div class="body">
+        <p class="label">${en(p.label)}</p>
+        <h3>${p.title}</h3>
+        <p class="role">${en(p.role)} · ${p.year}</p>
+        <p class="desc">${en(CASES[p.id].headline)}</p>
+        <div class="figs">${p.figures.map(f => `<div class="fig"><b>${en(f.v)}</b><span>${en(f.l)}</span></div>`).join('')}</div>
+        <span class="go">case study →</span>${p.repo ? '' : '<span class="private">code: private</span>'}
+      </div>
+    </article></div>`).join('');
+  fetch('/miaaa3-profile/tools/_log.html').then(r => r.text()).then(h => { document.getElementById('logSlot').innerHTML = h; document.body.dataset.ready = '1'; });
+</script>
+</body>
+</html>
